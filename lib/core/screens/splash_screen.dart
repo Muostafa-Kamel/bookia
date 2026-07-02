@@ -4,6 +4,8 @@ import 'package:bookia/core/screens/welcome_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../thems/app_colors.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -33,8 +35,27 @@ class _State extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-
+    return Scaffold(
+      backgroundColor: AppColors.bgColor,
+      body: Column(
+        mainAxisAlignment: .center,
+        crossAxisAlignment: .center,
+        children: [
+          Center(child: Image.asset("assets/images/logo2.png")),
+          SizedBox(height: 10),
+          Center(
+            child: Text(
+              "Order Your Book Now!",
+              style: TextStyle(
+                fontFamily: "GoogleFonts",
+                color: AppColors.darkFontColor,
+                fontSize: 20,
+                fontWeight: .w400,
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

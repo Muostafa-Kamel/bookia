@@ -7,7 +7,7 @@ import '../models/register_request_model.dart';
 class AuthRemoteDataSource {
   final Dio _dio = Dio(
     BaseOptions(
-      baseUrl: 'http://api.codingarabic.online/api/',
+      baseUrl: 'https://api.codingarabic.online/api/',
       connectTimeout: const Duration(seconds: 5),
       receiveTimeout: const Duration(seconds: 5),
     ),
