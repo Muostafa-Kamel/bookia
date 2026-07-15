@@ -6,6 +6,10 @@ A new Flutter project.
 
 ## an app that using Clean Architecture principiles
 
+## App Preview
+
+![App Demo](assets/appdemo.gif)
+
 
 
 ## Getting Started
