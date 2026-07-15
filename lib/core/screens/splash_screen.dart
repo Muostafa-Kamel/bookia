@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:bookia/core/screens/welcome_screen.dart';
+import 'package:bookia/features/auth/presentation/views/welcome_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

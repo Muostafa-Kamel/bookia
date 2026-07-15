@@ -3,8 +3,8 @@ import 'package:bookia/features/auth/presentation/views/register_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../thems/app_colors.dart';
-import '../widgets/reusable_button.dart';
+import '../../../../core/thems/app_colors.dart';
+import '../../../../core/widgets/reusable_button.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -56,7 +56,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             SizedBox(height: 15),
             ReusableButton(
               title: "Register",
-              buttonBGColor: AppColors.primaryColor,
+              buttonBGColor: AppColors.whiteFontColor,
               titleColor: AppColors.darkFontColor,
               onPressed: () {
                 Navigator.push(

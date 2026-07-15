@@ -2,12 +2,13 @@ import 'package:bookia/features/auth/data/models/login_request_model.dart';
 import 'package:bookia/features/auth/data/models/user_model.dart';
 import 'package:dio/dio.dart';
 
+import '../../../../core/constant/api_constant.dart';
 import '../models/register_request_model.dart';
 
 class AuthRemoteDataSource {
   final Dio _dio = Dio(
     BaseOptions(
-      baseUrl: 'https://api.codingarabic.online/api/',
+      baseUrl: AppConstant.apiUrl,
       connectTimeout: const Duration(seconds: 5),
       receiveTimeout: const Duration(seconds: 5),
     ),
